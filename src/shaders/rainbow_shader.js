@@ -5,6 +5,6 @@ AFRAME.registerShader('rainbow-shader', {
     thickness: { type: 'number', is: 'uniform', default: 1.0 },
     interval: { type: 'number', is: 'uniform', default: 0.01 }
   },
-  vertexShader: require('./default.vert').default,
+  vertexShader: require('./slice.vert').default,
   fragmentShader: require('./rainbow.frag').default,
 })
