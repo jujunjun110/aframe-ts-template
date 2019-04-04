@@ -15,6 +15,7 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "@types/aframe": "^0.8.2",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.5",
     "babel-loader": "^8.0.5",

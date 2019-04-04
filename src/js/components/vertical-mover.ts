@@ -1,6 +1,3 @@
-declare var AFRAME: any;
-declare var THREE: any;
-
 AFRAME.registerComponent('vertical-mover', {
   schema: {
     speed: { type: 'number', default: 1 },
