@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "./build",
+        "strictNullChecks": true,
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+    }
+}
