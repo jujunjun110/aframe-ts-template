@@ -3,11 +3,13 @@ AFRAME.registerComponent('vertical-mover', {
     speed: { type: 'number', default: 1 },
   },
   init: function () {
+    this.defaultPosition = this.el.getAttribute('position').clone()
     console.log('init')
   },
   tick: function () {
     const time = Date.now()
-    const pos = new THREE.Vector3(0, Math.sin(time * 0.001 * this.data.speed), -10)
+    const newY = this.defaultPosition.y + Math.sin(time * 0.001 * this.data.speed);
+    const pos = this.defaultPosition.clone().setY(newY);
     this.el.setAttribute('position', pos)
   }
 });
