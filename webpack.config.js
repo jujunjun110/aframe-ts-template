@@ -11,10 +11,11 @@ module.exports = {
         rules: [
             { test: /\.ts$/, use: ["babel-loader", "ts-loader"] },
             { test: /\.scss$/, use: ["style-loader", "css-loader", "sass-loader"] },
+            { test: /\.(glsl|vert|frag)$/, exclude: /node_modules/, use: ['webpack-glsl'] }
         ]
     },
     resolve: {
-        extensions: ['.ts', ".js", "scss"]
+        extensions: ['.ts', ".js", "scss", "txt", "frag", "vert"]
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
